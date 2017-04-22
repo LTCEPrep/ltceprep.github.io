@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LTCE Prep - Medical Interpreters: Exam information</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/flexbox.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/nav.css">
+<script>
+$(document).ready(function(){
+    $("button.dialogue").click(function(){
+        $("p.dialogue").toggle();
+    });
+});
+</script>
+</head>
+
+<body class="bg-lavendar" style="background-image: none;">
+
+<table style="width: 100%; padding: 2px; border: 0px;">
+     <tr>
+     	<td colspan="2" class="bg-paper" style="padding: 10px; border: 0px; border-collapse: collapsed;"><div class="Font-L">Sentence 01</div></td>
+    </tr>
+     <tr>
+          <td class="txt-left bg-paper" style="padding: 6px 6px 8px 6px; border: none; border-collapse: collapsed; width: 99%;">
+               <audio id="EC04"><source src="/assets/audio/02.mp3"></source></audio>
+               <input type="button" class="Font-S" style="height: 40px; width: 150px; background-color: #C6C6BB;" onclick="document.getElementById('EC04').play()" value="play audio">
+        </td>
+        <td class="bg-greychateau" style="align: center; padding: 6px 6px 8px 6px; border-bottom: none;"><button class="dialogue Font-S" style="height: 40px; width: 150px; background-color: #C6C6BB;"><div style="inline: block">Show/Hide Dialogue</div></button></td>
+     </tr>
+     <tr>
+     	<td colspan="2" class="bg-greychateau" style="padding: 4px 6px 8px 6px; border-top: 0px; border-bottom: 1px dotted black;">
+     	     <p class="dialogue" style="display: visable; color: #633; text-align: center; font-size: 1.25em;"> [The dialogue will appear here.]</p>
+     	     <p class="dialogue" style="display: none; padding-left: 10px; font-size: 1.25em;">Text for recording 02</p>
+     	</td>
+     </tr>
+</table>
+<br />
+<div class="blah">
+  <a href="mre-menu.html">&laquo;</a>
+  <a href="mre001.html" class="active">1</a>
+  <a href="mre002.html">2</a>
+  <a href="mre03.html">3</a>
+  <a href="mre04.html">4</a>
+  <a href="mre05.html">5</a>
+  <a href="mre06.html">6</a>
+  <a href="next.html">&raquo;</a>
+</div>
+
+</body>
+</html>
