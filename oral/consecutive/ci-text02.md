@@ -16,7 +16,8 @@ layout: ci-iFrame
 </header>
 
 
-<div class="CIE-Content-Header">Recording II: Mumps Symptoms</div> 		
+<div class="CIE-Content-Header">Recording II: Mumps Symptoms</div> 	
+<div class="center-it" style="text-align: center;"><a style="color: #933; text-decoration: none;" href="/assets/audio/Mumps.mp3" target="_audio">Open Audio in New Window</a></div> 			
 <div id="changeFontColor">
 <p class="CIE-Content" style="padding-left: 10px; padding-right: 15px;">I have not felt well for almost a week now.  On Monday, I noticed a small lump just under my left ear.  The lumps have spread down the left side of my body.  The lumps feel firm and very painful.  The pain is sharp and constant, especially in the morning.  Sleeping is especially difficult. Whenever I lie down, the discomfort becomes much stronger.</p>
 <p class="CIE-Content" style="padding-left: 10px; padding-right: 15px;">Eating is very difficult.  I have a hard time swallowing.  My throat feels tight.   My mouth feels very dry and I have a funny taste in my mouth.  My head constantly throbs now.  My stomach feels nauseous and I cannot keep anything down.</p>

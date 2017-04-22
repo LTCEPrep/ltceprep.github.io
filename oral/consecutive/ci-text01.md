@@ -15,7 +15,8 @@ layout: ci-iFrame
 </div>
 </header>
 
-<div class="CIE-Content-Header">Recording 1: Parkinson's Symptoms</div> 		
+<div class="CIE-Content-Header">Recording 1: Parkinson's Symptoms</div>
+<div class="center-it" style="text-align: center;"><a style="color: #933; text-decoration: none;" href="/assets/audio/Parkinsons.mp3" target="_audio">Open Audio in New Window</a></div> 		
 <div id="changeFontColor">
 <p class="CIE-Content" style="padding-left: 10px; padding-right: 15px;">Two years ago, I developed a spasm in my left pinky that would come and go.  When I was younger, I had minor muscle spasms whenever I was under stress.  But, the spams never lasted more than a week or two.</p>
 <p class="CIE-Content" style="padding-left: 10px; padding-right: 15px;">During the last six months, I started to have severe tremors in my left arm.  My arm just shakes.  I cannot control the tremors, either.  I took some medication to relax my muscles, but they pills don’t seem to be helping the problem. I am afraid that something more serious than stress is causing the tremors.</p>

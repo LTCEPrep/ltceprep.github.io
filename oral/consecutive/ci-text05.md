@@ -15,7 +15,8 @@ layout: ci-iFrame
 </div>
 </header>
 
-<div class="CIE-Content-Header">Recording V: Colitis Symptoms</div> 		
+<div class="CIE-Content-Header">Recording V: Colitis Symptoms</div> 
+<div class="center-it" style="text-align: center;"><a style="color: #933; text-decoration: none;" href="/assets/audio/Colitis.mp3" target="_audio">Open Audio in New Window</a></div> 	
 <div id="changeFontColor">
 <p class="CIE-Content" style="padding-left: 15px; padding-right: 15px;">In December, I started having horrible cramps in my abdomen.  Around the same time, I began to have episodes of diarrhea.  I went to a doctor to have things checked out.  She wrote me a prescription for my camps, and said that stress perhaps was causing the diarrhea.</p>
 <p class="CIE-Content" style="padding-left: 15px; padding-right: 15px;">The medicine did not help, so I went back to see the doctor.  She put me on a new mediation. She thought my symptoms might be due to a bacterial infection.  She ran some blood work, but the test results came back negative.</p>

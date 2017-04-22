@@ -17,6 +17,7 @@ layout: ci-iFrame
 
 
 <div class="CIE-Content-Header">Recording IV: Bacterial Meningitis Symptoms</div> 		
+<div class="center-it" style="text-align: center;"><a style="color: #933; text-decoration: none;" href="/assets/audio/Meningitis.mp3" target="_audio">Open Audio in New Window</a></div> 			
 <div id="changeFontColor">
 <p class="CIE-Content" style="padding-left: 10px; padding-right: 15px;">My son has not been feeling well for a couple of weeks, now.  He had food poisoning twice, but he refused to go see a doctor.  I think he lost at least 5 pounds, maybe 10.  He limited his diet to just liquids and crackers. </p>
 <p class="CIE-Content" style="padding-left: 10px; padding-right: 15px;">This morning, he woke up with a severe headache.  He complained that he had very stiff neck and could not turn his head.  He took several Ibuprofen tablets, but the medicine did not help.  By the afternoon, he started to run a high fever.</p>
