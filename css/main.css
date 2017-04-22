@@ -1,1 +1,787 @@
+body  {
+   background-color: #9099A2;
+   background-image: url(/assets/images/bg.png);
+   background-attachment: fixed; 
+   margin: 0px;
+   font-family: Helvetica, Verdana, Arial, sans-serif; 
+   font-size: 1em;
+   min-height: 100%;
+}
+
+
+
+
+
+/** TEXT ALIGNMENT **/
+
+
+.txt-left { 
+    text-align: left;
+   }
+   
+.txt-center {
+    text-align: center;
+}   
+
+.txt-right {
+    text-align: right;
+}   
+
+
+/** FONT SIZE   -------------------------------  **/
+
+.Font-XL {
+  font-size: 2em;
+  }
+
+.Font-L {
+  font-size: 1.5em;
+  }
+  
+ .Font-S {
+  font-size: .9em;
+  }
+
+/** FONT COLOR   -------------------------------  **/
+
+.txt-white {
+    color: white;
+    }  
+
+
+/** PARAGRAPH SPACING  -------------------------------  **/
+
+p.LineSpace2 { 
+    text-align: left;
+    display: block;
+    line-height: 2;
+   }
+   
+p.LineSpace15 { 
+    text-align: left;
+    display: block;
+    line-height: 1.5;
+    }
+
+/** Consecutive Interpretation EXERCISES  -------------------------------------------------------------------  **/
+
+.CIE-iFrame {
+	background-color: #eee;
+	background-image: none;
+	width: 100%;
+	height: 600px; 
+	margin: 0px; 
+	padding-left: 1px; 
+	padding-right: 1px; 
+	border: 2px solid black; 
+	overflow-y: scroll;
+
+}
+
+
+div.CIE-Content-Header {
+	font-weight: bold;
+	margin: .0em;
+	padding-bottom: 0em;
+	padding-top: 4em;
+    line-height: 1.2;
+    font-size: 1.25em;
+    text-align: center;
+    color: black;	
+    }
+
+p.CIE-Content {
+	background-color: #eee;
+	margin: .0em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+    line-height: 1.2;
+    font-size: 1em;
+    text-align: justify;
+    }
+
+.CIE-footer {
+  position: fixed;
+  bottom: 0;
+  /** min-height: 2em; **/
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #333;
+  opacity: 0.9;
+  filter: Alpha(opacity=90); /* IE8 and earlier */
+}
+
+.CIE-footer-text {
+	padding: 10px; 
+	padding-right: 4em; 
+	color: white; 
+	text-align: center; 
+	font-size: 1em; 
+}
+
+div.CIE-menu {
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-decoration: none;
+}
+
+div.CIE-menu a {
+	background-color: #ccc;
+	border-top: 2px solid black;
+	border-bottom: none;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+    color: black;
+    margin-right: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    border-radius: 5px 5px 0px 0px;
+}
+
+div.CIE-menu a.active {
+    background-color: #ccc;
+    color: black;
+}
+
+div.CIE-menu a:hover:not(.active) {
+    background-color: #966;
+    color: white;
+}
+
+div.CIE-menu a:visited {
+    background-color: #aaa;
+    color: #c00;
+}
+
+
+#changeFontColor {
+	color: #eee;
+}
+
+.CIE-button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid black;
+    color: black;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	box-shadow: 2px 2px 2px #000;
+}
+
+.CIE-button-audio {
+    background-color: red; /* RED */
+    border: 1px solid black;
+    color: white;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	box-shadow: 2px 2px 2px #000;
+}
+
+
+.CIE-header {
+  position: fixed;
+  top: 0;
+  min-height: 1%;
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: #222;
+  opacity: 0.75;
+  filter: Alpha(opacity=75); /* IE8 and earlier */
+}
+
+.CIE-header-text {
+   background-color: black; 
+   padding: 1em; 
+   padding-right: 4em; 
+   color: white; 
+   text-align: right; 
+   font-size: .75em;
+}
+
+
+
+
+/** BODY FRAME FORMATTING -------------------------------  **/
+
+.center-it {
+  align: center; 
+  /** max-width: 1000px; **/
+  margin: auto;
+  justify-content: center;
+  max-width: 1000px; 
+  padding-top: 10px
+  }
+
+.parent {
+  padding: 0px; 
+  margin: auto;
+}
+
+.content-frame {
+  min-width: 350px;
+  background-color: white;
+  margin: 10px 0px 10 px 0px;
+  padding: 20px;
+  border: 2px solid #933;
+  border-radius: 10px;
+}
+
+
+
+/** Column 2  FORMATTING -------------------------------  **/
+
+
+.column2 {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	-webkit-column-width: 230px;
+	-moz-column-width: 230px;
+	column-width: 230px;
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+
+    -webkit-column-rule: 1px outset #ccc; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px outset #ccc; /* Firefox */
+    column-rule: 1px outset #ccc;
+ 
+    text-align: left;
+}
+
+/** MRE Bottom Nav Menu LINK FORMATTING -------------------------------  **/
+
+.blah {
+    display: inline-block;
+}
+
+.blah a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.blah a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.blah a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/** MRE MENU Link Formatting -------------------------------  **/
+
+
+.mre-link {
+    display: inline-block;
+}
+
+.mre-link a {
+    background-color: #9099A2;
+    width: 15%; 
+    color: black;
+    float: left;
+	margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 1px white; 
+    text-align: center;
+    }
+
+.mre-link a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.mre-link a:hover:not(.active) {
+	color: #900;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #ccc; 
+}
+
+
+.link-red  {
+    color: #900;
+    text-decoration: none;
+    }
+.link-red:hover  {
+    color: #c00;
+    text-decoration: underline;
+    }
+    
+.link-red-02  {
+    color: #633;
+    text-decoration: none;
+    }
+.link-red-02:hover  {
+    color: #fff;
+    text-decoration: none;
+    }
+
+
+/** Background colors  ------------------------------- **/
+
+
+.bg-greychateau {
+    background-color: #A5A8AA;	
+  }
+.bg-lavendar {
+  background-color: #BBC1C6;
+    }
+.bg-junglemist {
+  background-color: #BBC6C6;
+    }
+.bg-maverick {
+    background-color: #C6BBC0;	
+  }
+.bg-moonmist {
+  background-color: #C6C6BB;
+    }
+.bg-overcast {
+    background-color: #9099A2;
+    }
+.bg-paper {
+    background-color: #d5d5d5;	
+  }
+.bg-white  {
+  background-color: #fff;
+    }
+
+
+/** HOMEPAGE BOX FORMATTING ------------------------------- **/
+
+h1.maintitle {
+  color: #000;
+  font-size: 2em;
+  padding: .5em;
+  border: 3px solid #333;
+  border-style: solid;
+  border-radius: 22px 22px 22px 22px;
+  background-color: #BBC1C6;     
+  text-align: center;
+}
+
+h1.maintitle-about {
+  color: #000;
+  font-size: 2em;
+  padding: .5em;
+  border: 3px solid #333;
+  border-style: solid;
+  border-radius: 22px 22px 22px 22px;
+  background-color: #A5A8AA;     
+}
+
+h1.maintitle-code {
+  color: #000;
+  font-size: 2em;
+  text-align: center; 
+  padding: .5em;
+  border: 3px solid #333;
+  border-style: solid;
+  border-radius: 22px 22px 22px 22px;
+  background-color: #C6C6BB;     
+}
+
+h1.maintitle-exam {
+  color: #000;
+  font-size: 2em;
+  text-align: center; 
+  padding: .5em;
+  border: 3px solid #333;
+  border-style: solid;
+  border-radius: 22px 22px 22px 22px;
+  background-color: #BBC6C6;     
+}
+
+h1.maintitle-grammar {
+  color: #fff;
+  font-size: 2em;
+  text-align: center; 
+  padding: .5em;
+  border: 3px solid #333;
+  border-style: solid;
+  border-radius: 22px 22px 22px 22px;
+  background-color: #C6BBC0;     
+}
+
+h1.maintitle-oral {
+  color: #000;
+  font-size: 2em;
+  text-align: center; 
+  padding: .5em;
+  border: 3px solid #333;
+  border-style: solid;
+  border-radius: 22px 22px 22px 22px;
+  background-color: #BBC1C6;     
+}
+
+
+h1.maintitle-vocab {
+  color: #333;
+  font-size: 2em;
+  text-align: center; 
+  padding: .5em;
+  border: 3px solid #333;
+  border-style: solid;
+  border-radius: 22px 22px 22px 22px;
+  background-color: #d5d5d5;     
+}
+
+h2.maintitle-oral {
+  color: #000;
+  font-size: 1.5em;
+  text-align: center; 
+  padding: .5em;
+  border: 3px solid #333;
+  border-style: solid;
+  border-radius: 22px 22px 22px 22px;
+  background-color: #BBC1C6;     
+}
+
+
+/** FOOTER FORMATTING  -------------------------------  **/
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  min-height: 1%;
+  width: 100%;
+  padding: 0px;
+  background-color: #222;
+  opacity: 0.75;
+  filter: Alpha(opacity=75); /* IE8 and earlier */
+}
+
+.footer-text {
+   background-color: black; 
+   padding: 1em; 
+   padding-right: 4em; 
+   color: white; 
+   text-align: right; 
+   font-size: .75em;
+}
+
+
+
+/* HR STYLED  -------------------------------------------------------------------- */
+
+/* HR Gradient color1 - color2 - color1 */
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/* HR Gradient transparent - color - transparent */
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* HR Double-color dashed line */
+
+hr.style-three {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+/* HR Inset, by Dan Eden */
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* HR - Flaired edges, by Tomas Theunissen */
+
+hr.style-seven {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+/* HR Glyph, by Harry Roberts */
+
+hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+
+
+/** TABLE FORMATTING -------------------------------------------- **/
+
+
+.naked {
+    empty-cells: hide;
+    border: 0px solid;
+    border-collapse: collapsed;
+    }
+   
+.zerospace {
+    padding: 0px;
+    margin: 0px;
+  }
+
+
+.top1px {
+    empty-cells: hide;
+    background-color: #ccc;  
+    border-top: 2px solid #666;
+    border-left: 6px solid #fff;
+    border-right: 6px solid #fff;
+    border-bottom: 0px;
+    padding: 5px 5px 5px 5px;
+    height: auto;
+  }
+
+.autoheight {
+    height: auto;
+  }
+
+
+/** TABLE FORMATTING **/
+
+table.full {
+    empty-cells: hide;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+tr:hover {
+	background-color: #fff;
+	}
+	
+
+th {
+    color: black;
+    padding: 1em;
+    text-align: left;
+    vertical-align: middle;
+}	
+
+
+td.vocab {
+    padding: 1em;
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td.vocab:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+td.vocab-na {
+    padding: 1em;
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+	cursor: not-allowed;
+}
+
+td.vocab-na:hover {
+	cursor: not-allowed;
+}
+
+td.cell-left-0 {
+    text-align: left;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.cell-top-left {
+  padding: .5em;
+  text-align: left; 
+  vertical-align: top; 
+}
+
+
+td a.cell {
+	color: darkred;
+    text-decoration: underline;
+}
+
+td a.cell:hover {
+    color: #c00;
+}
+
+
+
+/** LISTS ------------------------------------------------ **/
+   
+ul.basic-square li {
+    list-style-type: square;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.2;
+  }
+
+ul.basic-square li.nobullet {
+    text-align: left;
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.2;
+  }
+
+ol.roman li {
+    list-style-type: upper-roman;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.2;
+    }
+
+
+
+/* DIV LINK: Add atribute to link inside div box */
+
+.box {
+     display:block; 
+     position: relative; 
+     width: full; 
+     height: full; 
+     left: 0; 
+     top: 0;
+     }
+
+/* H1 - H5 ------------------------------------------------------------ */
+
+h2.smallcaps {
+     font-family: Lucida Console, monospaced;
+     font-variant: small-caps;
+     font-size: 2em;
+     }
+h3  {
+     font-family: Helvetica, Verdana, Arial, sans-serif; 
+     font-size: 1.25em;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     }     
+     
+h4  {
+     font-family: Helvetica, Verdana, Arial, sans-serif; 
+     font-size: 1em;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     }     
+
+
+/* Buttons ---------------------------------------------------------------------------Buttons */
+
+
+
+
+
+/*   ------------------------------------------------------ */     
+
+
+div.bg-image-st {
+	background-color: #d5d5d5;
+ }
+
+div.bg-image-st:hover {
+	background-color: #BBC1C6;
+ }
+
+div.bg-st {
+	background: url(/assets/images/eye.png);
+	background-repeat: no-repeat; 
+	background-position: center;
+		opacity: .10;
+ }
+
+div.bg-st:hover {
+	background: url(/assets/images/eye.png);
+	background-repeat: no-repeat; 
+	background-position: center;
+	opacity: .80;
+ }
+
+
+/* RANDOM SHIT FOR NOW----------------------------------------------------- */     
+
+div.NotAllowed {
+	cursor: not-allowed;
+	}
+
+/* HIDE ME  ------------------------------------------------------ */     
+
+
+
+.hide {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}
 

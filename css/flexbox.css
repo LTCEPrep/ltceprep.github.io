@@ -1,0 +1,215 @@
+/** DIV HEADBOX-Content -------------------------------------------------------------------- **/
+
+.headbox-content {
+  min-height: 250px;
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+
+}
+
+.headbox-content-nest {
+  margin: 0px;
+  padding: 10px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  background-color: white;
+  color: #000;
+  text-align: left;
+  border: 1px solid #666;
+  border-radius: 5px 5px ;}
+
+/**** Flexbox - Background Fill  ****/
+
+div.fb-bg-white {
+    margin: 5px;
+    padding: 0px;
+    background-color: #fff;
+	}
+div.fb-bg-gray {
+    margin: 5px;
+    padding: 0px;
+    background-color: #cdcdcd;
+	}
+
+
+/**** Flexbox - To Make Clickable BG within FB  ****/
+
+.fb-box {
+     display:block; 
+     position: relative; 
+     width: full; 
+     height: full; 
+     left: 0; 
+     top: 0;
+     }
+
+
+.fb-nolink {
+   font-size: 1em;
+   font-variant: small-caps;
+   color: #111;
+   text-decoration: none;
+}
+
+/**** Flexbox Links ****/
+
+a.fb-link {
+   font-size: 1em;
+   font-variant: small-caps;
+   color: #111;
+   text-decoration: none;
+}
+
+a.fb-link:hover {
+   color: #900;
+}
+
+
+
+
+/**** flex-wrap ****/
+
+
+.fb-container .fb-parent {
+  justify-content: center;
+  max-width: max-content;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+/**** INDIVIDUAL BOX Flex-wrap ****/
+
+
+.fb-item-1 {
+  flex-grow: 1;
+  min-height: 300px;
+  min-width: 250px;
+  margin: 4px;
+  padding: 2px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  border: 2px solid #633;
+  border-radius: 15px 1px 1px 1px;
+  box-shadow: 3px 3px 6px #999;
+}
+
+.fb-item-1:hover {
+  box-shadow: 3px 3px 6px #300;
+}
+
+.fb-item-2 {
+  flex-grow: 1;
+  min-height: 300px;
+  min-width: 250px;
+  margin: 4px;
+  padding: 2px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  border: 2px solid #633;
+  border-radius: 1px 1px;
+  box-shadow: 3px 3px 6px #999;
+}
+.fb-item-2:hover {
+  box-shadow: 3px 3px 6px #300;
+}
+
+.fb-item-3 {
+  flex-grow: 1;
+  min-height: 300px;
+  min-width: 250px;
+  margin: 4px;
+  padding: 2px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 1px 15px 1px 1px;
+  box-shadow: 3px 3px 6px #999;
+}
+
+/** .fb-item-3:hover {
+  box-shadow: 3px 3px 6px #300;
+} **/
+
+.fb-item-4 {
+  flex-grow: 1;
+  min-height: 300px;
+  min-width: 250px;
+  margin: 4px;
+  padding: 2px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius:  1px 1px 1px 15px;
+  box-shadow: 3px 3px 6px #999;
+}
+/** .fb-item-4:hover {
+  box-shadow: 3px 3px 6px #300;
+} **/
+  
+.fb-item-5 {
+  flex-grow: 1;
+  min-height: 300px;
+  min-width: 250px;
+  margin: 4px;
+  padding: 2px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  border: 2px solid #633;
+  border-radius: 1px 1px;
+  box-shadow: 3px 3px 6px #999;
+}
+.fb-item-5:hover {
+  box-shadow: 3px 3px 6px #300;
+}
+
+.fb-item-6 {
+  flex-grow: 1;
+  min-height: 300px;
+  min-width: 250px;
+  margin: 4px;
+  padding: 2px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius:  1px 1px 15px 1px;
+  box-shadow: 3px 3px 6px #999;
+}
+.fb-item-6:hover {
+  box-shadow: 3px 3px 6px #300;
+}
+
+
+
+/** Oral Flex Boxes **/
+
+.flex-container-oral {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+}
+
+.flex-item-oral {
+    min-width: 180px;
+    margin: 5px;
+}
+
+
+
+
