@@ -177,7 +177,11 @@ div.CIE-menu a:visited {
     margin: 4px 2px;
     cursor: pointer;
 	box-shadow: 2px 2px 2px #000;
-}
+	}
+.CIE-button:hover {
+	box-shadow: 2px 2px 5px #333;
+	}
+
 
 .CIE-button-audio {
     background-color: red; /* RED */
@@ -192,6 +196,9 @@ div.CIE-menu a:visited {
     cursor: pointer;
 	box-shadow: 2px 2px 2px #000;
 }
+.CIE-button-audio:hover {
+	box-shadow: 2px 2px 5px #333;
+	}
 
 
 .CIE-header {
@@ -213,6 +220,166 @@ div.CIE-menu a:visited {
    text-align: right; 
    font-size: .75em;
 }
+
+
+/** MEMROY RETENTION EXERCISES  -------------------------------------------------------------------  **/
+
+.MRE-iFrame {
+	background-color: #eee;
+	background-image: none;
+	width: 100%;
+	height: 600px; 
+	margin: 0px; 
+	padding-left: 1px; 
+	padding-right: 1px; 
+	border: 2px solid black; 
+	overflow-y: scroll;
+
+}
+
+
+div.MRE-Content-Header {
+	font-weight: bold;
+	margin: .0em;
+	padding-bottom: 0em;
+	padding-top: 4em;
+    line-height: 1.2;
+    font-size: 1.25em;
+    text-align: center;
+    color: black;	
+    }
+
+p.MRE-Content {
+	background-color: #eee;
+	margin: .0em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+    line-height: 1.2;
+    font-size: 1.5em;
+    text-align: justify;
+    }
+
+.MRE-footer {
+  position: fixed;
+  bottom: 0;
+  /** min-height: 2em; **/
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #333;
+  opacity: 0.9;
+  filter: Alpha(opacity=90); /* IE8 and earlier */
+}
+
+.MRE-footer-text {
+	padding: 10px; 
+	padding-right: 4em; 
+	color: white; 
+	text-align: center; 
+	font-size: 1em; 
+}
+
+div.MRE-menu {
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-decoration: none;
+}
+
+div.MRE-menu a {
+	background-color: #ccc;
+	border-top: 2px solid black;
+	border-bottom: none;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+    color: black;
+    margin-right: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    border-radius: 5px 5px 0px 0px;
+}
+
+div.MRE-menu a.active {
+    background-color: #ccc;
+    color: black;
+}
+
+div.MRE-menu a:hover:not(.active) {
+    background-color: #966;
+    color: white;
+}
+
+div.MRE-menu a:visited {
+    background-color: #aaa;
+    color: #c00;
+}
+
+
+
+.MRE-button {
+    background-color: #c99; /* Green */
+    border: 1px solid black;
+    color: black;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	box-shadow: 2px 2px 2px #000;
+	}
+.MRE-button:hover {
+	box-shadow: 2px 2px 5px #333;
+	}
+
+
+.MRE-button-audio {
+    background-color: #933; /* RED */
+    border: 1px solid black;
+    color: white;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	box-shadow: 2px 2px 2px #000;
+}
+.MRE-button-audio:hover {
+	box-shadow: 2px 2px 5px #333;
+	}
+
+
+.MRE-header {
+  position: fixed;
+  top: 0;
+  min-height: 1%;
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: #222;
+  opacity: 0.75;
+  filter: Alpha(opacity=75); /* IE8 and earlier */
+}
+
+.MRE-header-text {
+   background-color: black; 
+   padding: 1em; 
+   padding-right: 4em; 
+   color: white; 
+   text-align: right; 
+   font-size: .75em;
+}
+
+
+
+
 
 
 
