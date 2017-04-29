@@ -190,7 +190,7 @@ a.fb-link:hover {
 
 
 
-/** Oral Flex Boxes **/
+/* ----------------------------------------------------- Oral Flex Boxes **/
 
 .flex-container-oral {
     display: -webkit-flex;
@@ -208,8 +208,80 @@ a.fb-link:hover {
 .flex-item-oral {
     min-width: 180px;
     margin: 5px;
+	padding: 5px; 
+    font-family: "Courier New", Courier, monospace;
+	letter-spacing: 2px;
+	border: 4px double #000; 
+	border-radius: 10px; 
+	box-shadow: 3px 3px 5px #999;
 }
 
+.flex-item-oral:hover {
+	border: 4px double #666; 
+}
+
+/* ----------------------------------------------------- Memory Recall Flex Boxes **/
+
+.flex-container-mr {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+}
+
+.flex-item-mr {
+	width: 15%;
+    min-width: 125px;    
+    margin: 10px;
+	padding-bottom: 10px; 
+	padding-top: 0px; 
+	padding-left: 0px; 
+	padding-right: 0px; 	
+    font-family: "Courier New", Courier, monospace;
+	letter-spacing: 2px;
+    font-size: 1em;
+    color: #000;
+    background-color: #D4DAD7;
+	border: 0px solid #000;  
+	box-shadow: 3px 3px 6px #666;
+}
+
+/* ----------------------------------------------------- Consecutive Interpreation Boxes **/
+
+.flex-container-ci {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+}
+
+.flex-item-ci {
+    min-width: 125px;    
+    margin: 10px;
+	padding-bottom: 10px; 
+	padding-top: 0px; 
+	padding-left: 0px; 
+	padding-right: 0px; 	
+    font-family: "Courier New", Courier, monospace;
+	letter-spacing: 2px;
+    font-size: 1em;
+    color: #000;
+    background-color: #B4A6AE;
+	border: 0px solid #000;  
+	box-shadow: 3px 3px 6px #666;
+}
 
 
 

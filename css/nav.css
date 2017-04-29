@@ -1,3 +1,5 @@
+/*  TOP OF PAGE NAVIGATION --------------------------------------------------- TOP OF PAGE NAVIGATION */
+
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -18,7 +20,7 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #900;}
+ul.topnav li a:hover:not(.active) {background-color: pink;}
 
 ul.topnav li a.active {background-color: #600;}
 
@@ -29,5 +31,116 @@ ul.topnav li.right {float: right;}
     ul.topnav li {float: none;}
 }
 
+/*  BREAD CRUMBS NAVIGATION   --------------------------------------------------- BREADCRUMBS NAVIGATION */
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: white;
+    font-size: .9em;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+
+
+
+
+/*   Memory Retention Exercises ----------------------------------------------- MRE Menu  */
+
+ul.mrenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+    opacity: 0.75;
+  filter: Alpha(opacity=75); /* IE8 and earlier */
+}
+
+ul.mrenav li {
+	float: left;     
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;	
+	}
+
+ul.mrenav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.mrenav li a:hover:not(.active) {background-color: #900;}
+
+ul.mrenav li a.active {background-color: #600;}
+
+ul.mrenav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.mrenav li.right, 
+    ul.mrenav li {float: none;}
+}
+
+/*   Consecutive Interpretation Exercises ----------------------------------------------- MRE Menu  */
+
+ul.cienav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+    opacity: 0.75;
+  filter: Alpha(opacity=75); /* IE8 and earlier */
+}
+
+ul.cienav li {
+	float: left;     
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;	
+	}
+
+ul.cienav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.cienav li a:hover:not(.active) {background-color: #900;}
+
+ul.cienav li a.active {background-color: #600;}
+
+ul.cienav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.mrenav li.right, 
+    ul.mrenav li {float: none;}
+}
 
 

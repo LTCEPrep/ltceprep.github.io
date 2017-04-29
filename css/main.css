@@ -1,18 +1,45 @@
+
 body  {
-   background-color: #9099A2;
-   background-image: url(/assets/images/bg.png);
-   background-attachment: fixed; 
-   margin: 0px;
-   font-family: Helvetica, Verdana, Arial, sans-serif; 
-   font-size: 1em;
-   min-height: 100%;
+	background-color: #efefef; /* #9099A2; */
+	background: url(/assets/images/bg-tile-cells.png) top left repeat  ;
+    background-attachment: fixed;
+	background-size: cover;
+	margin: 0px;
+	font-family: Helvetica, Verdana, Arial, sans-serif; 
+	font-size: 1em;
+}
+
+/** BODY FRAME FORMATTING -------------------------------  **/
+
+
+.center-it {
+  align: center; 
+  /** max-width: 1000px; **/
+  margin: auto;
+  justify-content: center;
+  max-width: 1000px; 
+  padding: 0px;
+  }
+
+.parent {
+  padding: 0px;
+  margin: auto;
+}
+
+.content-frame {
+  /*  min-width: 350px; */
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 15px #666;
 }
 
 
 
-
-
-/** TEXT ALIGNMENT **/
+/** BASIC TEXT ALIGNMENT ----------------------------------------------------BASIC TEXT ALIGNMENT **/
 
 
 .txt-left { 
@@ -26,6 +53,22 @@ body  {
 .txt-right {
     text-align: right;
 }   
+
+/** TEXT COLOR -------------------------------------------------------------- TEXT COLOR **/
+
+
+.text-darkred { 
+    color: #633;
+   }
+
+.text-gray666 { 
+    color: #666;
+   }   
+   
+.text-gray333 { 
+    color: #333;
+   }   
+
 
 
 /** FONT SIZE   -------------------------------  **/
@@ -48,6 +91,24 @@ body  {
     color: white;
     }  
 
+.link-red  {
+    color: #900;
+    text-decoration: none;
+    }
+.link-red:hover  {
+    color: #c00;
+    text-decoration: underline;
+    }
+    
+.link-red-02  {
+    color: #300;
+    text-decoration: none;
+    }
+.link-red-02:hover  {
+    color: #600;
+    text-decoration: none;
+    }
+
 
 /** PARAGRAPH SPACING  -------------------------------  **/
 
@@ -65,11 +126,14 @@ p.LineSpace15 {
 
 /** Consecutive Interpretation EXERCISES  -------------------------------------------------------------------  **/
 
+#changeFontColor {
+	color: #eee;
+}
+
 .CIE-iFrame {
 	background-color: #eee;
 	background-image: none;
 	width: 100%;
-	height: 600px; 
 	margin: 0px; 
 	padding-left: 1px; 
 	padding-right: 1px; 
@@ -161,9 +225,7 @@ div.CIE-menu a:visited {
 }
 
 
-#changeFontColor {
-	color: #eee;
-}
+
 
 .CIE-button {
     background-color: #4CAF50; /* Green */
@@ -225,84 +287,44 @@ div.CIE-menu a:visited {
 /** MEMROY RETENTION EXERCISES  -------------------------------------------------------------------  **/
 
 .MRE-iFrame {
-	background-color: #eee;
+	background-color: white;
 	background-image: none;
 	width: 100%;
-	height: 600px; 
+	height: 400px;
 	margin: 0px; 
-	padding-left: 1px; 
-	padding-right: 1px; 
-	border: 2px solid black; 
-	overflow-y: scroll;
-
+	padding-left: 0px; 
+	padding-right: 0px; 
+	border: none; 
 }
 
 
 div.MRE-Content-Header {
 	font-weight: bold;
-	margin: .0em;
 	padding-bottom: 0em;
-	padding-top: 4em;
+	padding-top: 1em;
     line-height: 1.2;
     font-size: 1.25em;
     text-align: center;
     color: black;	
     }
 
-p.MRE-Content {
-	background-color: #eee;
-	margin: .0em;
-	padding-bottom: 1em;
-	padding-top: 1em;
-    line-height: 1.2;
-    font-size: 1.5em;
-    text-align: justify;
-    }
-
-.MRE-footer {
-  position: fixed;
-  bottom: 0;
-  /** min-height: 2em; **/
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  background-color: #333;
-  opacity: 0.9;
-  filter: Alpha(opacity=90); /* IE8 and earlier */
-}
-
-.MRE-footer-text {
-	padding: 10px; 
-	padding-right: 4em; 
-	color: white; 
-	text-align: center; 
-	font-size: 1em; 
-}
-
-div.MRE-menu {
-    color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-    text-decoration: none;
-}
 
 div.MRE-menu a {
 	background-color: #ccc;
-	border-top: 2px solid black;
+	border-top: 1px solid black;
 	border-bottom: none;
-	border-right: 2px solid black;
-	border-left: 2px solid black;
+	border-left: 1px solid black;
     color: black;
-    margin-right: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 30px;
     padding-right: 30px;
     text-decoration: none;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 0px;
 }
+
+
+/*  Recording Groups  */
 
 div.MRE-menu a.active {
     background-color: #ccc;
@@ -318,7 +340,6 @@ div.MRE-menu a:visited {
     background-color: #aaa;
     color: #c00;
 }
-
 
 
 .MRE-button {
@@ -358,10 +379,10 @@ div.MRE-menu a:visited {
 
 
 .MRE-header {
-  position: fixed;
-  top: 0;
-  min-height: 1%;
+  /* top: 0; */
+  /*   min-height: 1%; */
   width: 100%;
+  padding-top: 10px;
   padding-bottom: 10px;
   background-color: #222;
   opacity: 0.75;
@@ -378,36 +399,43 @@ div.MRE-menu a:visited {
 }
 
 
-
-
-
-
-
-
-/** BODY FRAME FORMATTING -------------------------------  **/
-
-.center-it {
-  align: center; 
-  /** max-width: 1000px; **/
-  margin: auto;
-  justify-content: center;
-  max-width: 1000px; 
-  padding-top: 10px
-  }
-
-.parent {
-  padding: 0px; 
-  margin: auto;
+.mre-link {
+    display: inline-block;
 }
 
-.content-frame {
-  min-width: 350px;
-  background-color: white;
-  margin: 10px 0px 10 px 0px;
-  padding: 20px;
-  border: 2px solid #933;
-  border-radius: 10px;
+.mre-link a {
+    background-color: #9099A2;
+    width: 15%; 
+    color: black;
+    float: left;
+	margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 1px white; 
+    text-align: center;
+    }
+
+.mre-link a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
 }
+
+.mre-link a:hover:not(.active) {
+	color: #900;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #ccc; 
+}
+
+
+
+
+
+
+
 
 
 
@@ -457,58 +485,8 @@ div.MRE-menu a:visited {
     border-radius: 5px;
 }
 
-/** MRE MENU Link Formatting -------------------------------  **/
 
 
-.mre-link {
-    display: inline-block;
-}
-
-.mre-link a {
-    background-color: #9099A2;
-    width: 15%; 
-    color: black;
-    float: left;
-	margin: 10px;
-    padding: 10px;
-    text-decoration: none;
-    border: 2px solid black;
-    border-radius: 10px; 
-    box-shadow: 1px 1px 1px white; 
-    text-align: center;
-    }
-
-.mre-link a.active {
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-}
-
-.mre-link a:hover:not(.active) {
-	color: #900;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px #ccc; 
-}
-
-
-.link-red  {
-    color: #900;
-    text-decoration: none;
-    }
-.link-red:hover  {
-    color: #c00;
-    text-decoration: underline;
-    }
-    
-.link-red-02  {
-    color: #633;
-    text-decoration: none;
-    }
-.link-red-02:hover  {
-    color: #fff;
-    text-decoration: none;
-    }
 
 
 /** Background colors  ------------------------------- **/
@@ -631,27 +609,6 @@ h2.maintitle-oral {
 }
 
 
-/** FOOTER FORMATTING  -------------------------------  **/
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  min-height: 1%;
-  width: 100%;
-  padding: 0px;
-  background-color: #222;
-  opacity: 0.75;
-  filter: Alpha(opacity=75); /* IE8 and earlier */
-}
-
-.footer-text {
-   background-color: black; 
-   padding: 1em; 
-   padding-right: 4em; 
-   color: white; 
-   text-align: right; 
-   font-size: .75em;
-}
 
 
 
@@ -693,13 +650,7 @@ hr.style-six {
 
 /* HR - Flaired edges, by Tomas Theunissen */
 
-hr.style-seven {
-    height: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-}
+
 hr.style-seven:before { /* Not really supposed to work, but does */
     display: block;
     content: "";
@@ -904,36 +855,161 @@ h4  {
      }     
 
 
-/* Buttons ---------------------------------------------------------------------------Buttons */
+/* Accordion ----------------------------------------------------------------------------------------------------------- Accordion */
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+	margin-top: 1px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+    background-color: #C9CBCA;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #818282;
+    color: white;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0px;
+    background-color: #eee;
+	border: 1px solid #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border: none;
+    outline: none;
+    
+}
+
+/* subAccordion ----------------------------------------------------------------------------------------------------------- subAccordion */
+
+button.subAccordion {
+	margin: 0px;
+    background-color: white;
+    font-size: .9em;
+	color: #900;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.subAccordion:after {
+    content: '\25A2'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.subAccordion.active:after {
+    content: '\25A9'; /* Unicode character for "minus" sign (-) */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.subAccordion.active, button.subAccordion:hover {
+    background-color: white;
+}
+
+
+div.subPanel {
+	background-color: white;
+	margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 1px;
+    padding-right: 1px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border: none;
+}
+
+
+/** IMAGES  FORMATTING  -------------------------------  **/
 
 
 
 
+img.picture {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
 
-/*   ------------------------------------------------------ */     
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.polaroid-container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+div.whitecanvas {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
 
 
-div.bg-image-st {
-	background-color: #d5d5d5;
- }
 
-div.bg-image-st:hover {
-	background-color: #BBC1C6;
- }
 
-div.bg-st {
-	background: url(/assets/images/eye.png);
-	background-repeat: no-repeat; 
-	background-position: center;
-		opacity: .10;
- }
+/** FOOTER FORMATTING  -------------------------------  **/
 
-div.bg-st:hover {
-	background: url(/assets/images/eye.png);
-	background-repeat: no-repeat; 
-	background-position: center;
-	opacity: .80;
- }
+.footer {
+  position: fixed;
+  bottom: 0;
+  min-height: 1%;
+  width: 100%;
+  padding: 0px;
+  background-color: #222;
+  opacity: 0.75;
+  filter: Alpha(opacity=75); /* IE8 and earlier */
+}
+
+.footer-text {
+   background-color: black; 
+   padding: 1em; 
+   padding-right: 4em; 
+   color: white; 
+   text-align: right; 
+   font-size: .75em;
+}
+
+
 
 
 /* RANDOM SHIT FOR NOW----------------------------------------------------- */     
