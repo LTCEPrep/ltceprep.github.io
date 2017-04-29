@@ -1,47 +1,122 @@
 <!DOCTYPE html>
 <html>
+	<head>
 	<title>LTCE Prep - Medical Interpreters: Consecutive Interpretation</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>	
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-	<link rel="stylesheet" type="text/css" href="/css/nav.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" type="text/css" href="/css/flexbox.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/nav.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="/js/ltce.js"></script>
 </head>
 
-<body class="bg-lavander">
+<body>
+
 <ul class="topnav">
   <li><a class="active" href="/index.html">Home</a></li>
-  <li class="right"><a href="/about/">About</a></li>
-    <li class="right"><a href="/contact/">Contact</a></li>
+  <li class="right"><a href="/index.html">Contact Us</a></li>
 </ul>
 
 
-
 <!- * Main Body - BEGIN ->
-<div class="center-it"  style="max-width: 1000px; min-witdh: 400px">
+<div class="center-it">
   <div class="parent">
+
 
      <!- * Body Content - BEGIN ->  
      <div class="content-frame bg-white">  
 
-    
+		<ul class="breadcrumb">
+		  <li><a href="../../index.html">LTCE Prep Home</a></li>
+		  <li><a href="../index.html">Oral Exercises</a></li>
+		  <li>Consecutive Interpretation</li>
+		</ul>
             <!- * Body Title - BEGIN ->         
-        
-        
-			{{ content }} 
-            
-            <!- * Body Title - END -> 
+
+		<div class="w3-container w3-white" style="box-shadow: 1px 1px 3px #666; border-radius: 3px;">
+		  <h1>Consecutive Interpretation</h1> 
+		  <p  class="text-gray333">A series of audio dialogues for developing the consecutive interpretation skill</p> 
+		</div>
+
+		<hr class="style-two;" style="clear: all;" />
+		<!- * Body Title - END ->  
+
+			<div style="float: left; clear: all;"><img src="/assets/images/interpreter.png" style="padding: 15px 15px 5px 0px; height: 122px; width: 161px"></div>
+			<p style="line-height: 1.75">Consecutive Interpretation Exercises:&nbsp;  The exercises found below use pre-recorded audio materials, where each recording contains a dialogue between a client and a service provider.&nbsp; Your role is that of an interpreter.&nbsp;  Start the exercise by playing a recorded dialogue.&nbsp;  After each sentence, render an interpretation from English into a target language.&nbsp;  The emphasis here is accuracy.&nbsp; The interpretation should express the source language message in a thorough and faithful manner, avoiding the addition or omission of anything.&nbsp;  The recorded dialogues have built-in pauses after each sentence.&nbsp; These pauses allow for adequate time to render an interpretation.</p>
+			<p style="line-height: 1.75">For additional practice, record yourself as you are doing the exercises.  Then, after you have finished a set of sentences, listen to your recording and compare it to the text that accompanies each recording.  To extend the exercise even further, perform a written translation of the provided text as well. </p>
+
+		<hr class="style-two;" style="clear: all;" />
+
+			<ol style="list-style-type: upper-latin; line-height: 2em"><strong>Directions for consecutive interpretation exercise</strong>
+				<li>Start an exercise by playing a recording of a dialogue.</li>
+				<li>As the recording plays, listen <em>carefully</em> to each sentence of the dialogue.&nbsp; After each sentence or two, you will hear a beep.</li>
+				<li>After the beep, there will be a pause in the dialogue for 10 seconds or so.&nbsp; This is your time to render an interpretation of the previous sentence into your target language.&nbsp;  Be sure your rendering is both <em>thorough</em> and <em>faithful</em>, taking care to add nothing and omit nothing.&nbsp;  Attempt to maintain the tone and spirit of the dialogue.</li>
+				<li>Repeat Step 2 and Step 3 until the dialogue is completed.</li>
+			</ol>
+            <!- * Body Title - BEGIN ->         
+		<hr class="style-two;" style="clear: all;" />
     
-     </div> 
-     <!- * Body Content - END ->  
-  </div>
-</div>
-<br />
-<br />
-&nbsp;
+			<h2>Recorded Dialogues</h2>
+			
+			
+			
+				<button class="accordion">Group 01 (added 22 April 2017)</button>
+				<div class="panel">
+					<iframe class="MRE-iFrame" name="01frame" src="/oral/consecutive/ci-set01.01.html">
+						<p>Your browser does not support iframes.</p>
+					</iframe>			
+				</div>
+
+				<button class="accordion">Group 02 (added 29 April 2017)</button>
+				<div class="panel">
+					<iframe class="MRE-iFrame" name="02frame" src="/oral/consecutive/ci-set02.01.html">
+						<p>Your browser does not support iframes.</p>
+					</iframe>			
+				</div>
+
+				<button class="accordion">Group 03 (to be added 06 May 2017)</button>
+					<div class="panel">
+Not added yet, folks.
+					</div>
+
+			<!- * Body Content - END ->  
+
+<br style="clear: all; "/>&nbsp;
+<br style="clear: all; "/>&nbsp;
+<br style="clear: all; "/>&nbsp;
+<br style="clear: all; "/>&nbsp;
+			</div>
+
+		</div>
+	
+	</div>
+	
+
+
 <footer class="footer">
 <div class="footer-text">LTCE Prep (2017)</div>
 </footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
 
 </body>
 </html>

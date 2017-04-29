@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html class="ci-Iframe">
+<html class="mr-Iframe">
+<head>
 	<title>LTCE Prep - Medical Interpreters: Consecutive Interpretation</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>	
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="stylesheet" type="text/css" href="/css/nav.css">
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>	  
 
-	
+
 </head>
 
-<body style="background-image: none; background-color: #eee;">
+<body style="background-image: none; background-color: white;">
 
-<!- * Main Body - BEGIN ->
+	<!- * Main Body - BEGIN ->
 
-	<div style="padding-left: 0px; padding-right: 0px">
+<!-- CONTENT BELOW -->
 
-		
-		{{ content }}
-		
-		</div>
-<br />
-&nbsp;
-<!- * Main Body - BEGIN ->
+{{ content }} 
 
-<br />
-<br />
+<!-- CONTENT AVBOVE -->
 
 <script>
-function textHide01() {
-    document.getElementById("changeFontColor").style.color = "#eee";
-}
+var acc = document.getElementsByClassName("subAccordion");
+var i;
 
-function textReveal01() {
-    document.getElementById("changeFontColor").style.color = "black";
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var subPanel = this.nextElementSibling;
+    if (subPanel.style.maxHeight){
+      subPanel.style.maxHeight = null;
+    } else {
+      subPanel.style.maxHeight = subPanel.scrollHeight + "px";
+    } 
+  }
 }
-
 </script>
-</body>
+
+
+
 </body>
 </html>
