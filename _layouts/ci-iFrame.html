@@ -21,22 +21,6 @@
 
 <!-- CONTENT AVBOVE -->
 
-<script>
-var acc = document.getElementsByClassName("subAccordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var subPanel = this.nextElementSibling;
-    if (subPanel.style.maxHeight){
-      subPanel.style.maxHeight = null;
-    } else {
-      subPanel.style.maxHeight = subPanel.scrollHeight + "px";
-    } 
-  }
-}
-</script>
 
 
 
