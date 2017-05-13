@@ -136,7 +136,7 @@ ul.cienav li a:hover:not(.active) {background-color: #900;}
 
 ul.cienav li a.active {background-color: #600;}
 
-ul.cienav li.right {float: right;}
+ul.cienav li.right {float: right; background-color: #000; border-left: 1px solid #666}
 
 @media screen and (max-width: 600px){
     ul.mrenav li.right, 
